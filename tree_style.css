@@ -1,0 +1,336 @@
+body {
+    background-color: rgb(245, 186, 186);
+    --line-color: rgb(30, 30, 33);
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Sofia', sans-serif;
+    color: rgb(7, 20, 14);
+    text-align: center;   
+}
+#time {
+    font-family: 'Sofia', sans-serif;
+}
+
+.tree {
+    margin-left: -40px;
+}
+
+li {
+    list-style: none;
+}
+
+.couple,
+.child,
+.grandChild,
+.grandChild1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.child {
+    margin-left: -70px;
+}
+
+.grandChild {
+    margin-left: -100px;
+}
+
+.grandChild1 {
+    margin-top: 50px;
+    margin-left: -80px;
+}
+
+.grandChild1A {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: -80px;
+}
+
+.grandChild1B {
+    margin-right: 120px;
+}
+
+.fmember {
+    background-color: rgba(240, 46, 98, 0.989);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: inline-block;
+    border: 2px dotted green;
+    border-radius: 100%;
+    box-shadow: 8px 7px 4px rgba(28, 24, 24, 0.65);
+    background-image: url(generic_avatar.png);
+    background-repeat: no-repeat;
+    
+}
+
+.nume {
+    width: 100px;
+    height: 40px;
+    border: 2px solid green;
+    color: green;
+    background-color: rgb(181, 254, 194);
+    border-radius: 12px 1px;
+    margin-top: -10px;
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: solid;
+    box-shadow: 3px 3px 3px rgba(50, 43, 43, 0.65);
+    
+}
+
+.tree .couple {
+    position: relative;
+}
+
+.tree .couple::after {
+    content: '';
+    width: 101px;
+    height: 3px;
+    position: absolute;
+
+    margin-top: 168px;
+    background-color: var(--line-color)
+}
+
+.tree .couple::before {
+    content: '';
+    width: 4px;
+    height: 6px;
+    position: absolute;
+    margin-left: -97px;
+    margin-top: 164px;
+    background-color: var(--line-color)
+}
+
+.tree .couple1 {
+    position: relative;
+}
+
+.tree .couple1::after {
+    content: '';
+    width: 4px;
+    height: 6px;
+    position: absolute;
+    margin-left: -77px;
+    margin-top: 164px;
+    background-color: var(--line-color);
+}
+
+.tree .couple .parent-couple {
+    position: relative;
+}
+
+.tree .couple .parent-couple::after {
+    content: '';
+    display: block;
+    width: 75px;
+    height: 4px;
+    position: absolute;
+    margin-top: 192px;
+    background-color: var(--line-color);
+    margin-left: -176px;
+
+    transform: translateX(-15px) rotate(140deg);
+
+}
+
+.tree .couple .parent-couple::before {
+    content: '';
+    display: block;
+    width: 75px;
+    height: 4px;
+    position: absolute;
+    margin-top: 192px;
+    background-color: var(--line-color);
+    margin-left: -116px;
+
+    transform: translateX(-15px) rotate(40deg);
+}
+
+.tree .couple .child1-couple {
+    position: relative;
+}
+
+.tree .couple .child1-couple::after {
+    content: '';
+    display: block;
+    width: 75px;
+    height: 4px;
+    position: absolute;
+    margin-top: 192px;
+    background-color: var(--line-color);
+    margin-left: -176px;
+
+    transform: translateX(-15px) rotate(140deg);
+}
+
+.tree .couple .child1-couple::before {
+    content: '';
+    display: block;
+    width: 75px;
+    height: 4px;
+    position: absolute;
+    margin-top: 192px;
+    background-color: var(--line-color);
+    margin-left: -116px;
+
+    transform: translateX(-15px) rotate(40deg);
+}
+
+.tree .couple .child2-couple {
+    position: relative;
+}
+
+.tree .couple .child2-couple::after {
+    content: '';
+    display: block;
+    width: 75px;
+    height: 4px;
+    position: absolute;
+    margin-top: 192px;
+    background-color: var(--line-color);
+    margin-left: -116px;
+
+    transform: translateX(-15px) rotate(40deg);
+}
+/*
+.tree .couple .grandChild-couple1 {
+    position: relative;
+}
+
+.tree .couple .grandChild-couple1::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 4px;
+    position: absolute;
+    margin-top: 192px;
+    background-color: var(--line-color);
+    margin-left: -224px;
+
+    transform: translateX(-20px) rotate(153deg);
+}
+
+.tree .couple .grandChild-couple1::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    position: absolute;
+    margin-top: 188px;
+    background-color: var(--line-color);
+    margin-left: -114px;
+
+    transform: translateX(-20px) rotate(28deg);
+}
+
+.tree .couple .grandChild-couple1A {
+    position: relative;
+}
+
+.tree .couple .grandChild-couple1A::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 4px;
+    position: absolute;
+    margin-top: 186px;
+    background-color: var(--line-color);
+    margin-left: -138px;
+
+    transform: translateX(-15px) rotate(90deg);
+}
+
+.tree .couple .grandChild-couple2 {
+    position: relative;
+}
+
+.tree .couple .grandChild-couple2::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 4px;
+    position: absolute;
+    margin-top: 186px;
+    background-color: var(--line-color);
+    margin-left: -130px;
+
+    transform: translateX(-15px) rotate(90deg);
+}
+
+.tree .couple .grandChild-couple3 {
+    position: relative;
+}
+
+.tree .couple .grandChild-couple3::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 4px;
+    position: absolute;
+    margin-top: 186px;
+    background-color: var(--line-color);
+    margin-left: -134px;
+
+    transform: translateX(-15px) rotate(90deg);
+}
+*/
+.addBtn {
+    width: 32px;
+    height: 32px;
+    background-image: url(refresh_btn.32.png);
+    bottom: 56px;
+    margin-left: 70px;
+    position: absolute;
+    display: none;
+
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    display: none;
+}
+.button .imgV {   
+    padding-right: 20px;
+}
+
+
+#modalPage {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 180px;
+    width: 400px;
+    border-radius: 40px;
+    background-color: rgb(248, 251, 87);
+    border: none;
+    
+}
+
+#modalOpen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalLabel {    
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+}
+
+#modalClose {
+    background-color: black;        
+    border-radius: 5px;
+    color: aliceblue;
+}
+

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Tree</title>
+    <link rel="stylesheet" href="tree_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+
+<body>
+    <h1>_ _ _ Family tree _ _ _</h1>
+    <div class="tree">
+        <ul>
+            <li>
+                <div class="couple">
+                    <div>
+                        <div class="fmember" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                            <div class="addBtn" onclick="openModal(1)"></div>
+                        </div>
+                        <div class="nume" ondblclick="editName(this)">
+                            <div class="nume1">Alex</div>
+                            <div class="button">
+                                <div class="imgV" onclick="saveName(this)">
+                                    <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-ok-icon.png"
+                                        width="16" height="16" />
+                                </div>
+                                <div class="imgX" onclick="clearName(this)">
+                                    <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-cancel-icon.png"
+                                        width="16" height="16" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="fmember" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                            <div class="addBtn" onclick="openModal(1)"></div>
+                        </div>
+                        <div class="nume" ondblclick="editName(this)">
+                            <div class="nume1">Maria</div>
+                            <div class="button">
+                                <div class="imgV" onclick="saveName(this)">
+                                    <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-ok-icon.png"
+                                        width="16" height="16" />
+                                </div>
+                                <div class="imgX" onclick="clearName(this)">
+                                    <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-cancel-icon.png"
+                                        width="16" height="16" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="couple1"></div>
+                    <div class="parent-couple"></div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="child">
+                            <div class="couple">
+                                <div>
+                                    <div class="fmember" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                                        <div class="addBtn" onclick="openModal(1)"></div>
+                                    </div>
+                                    <div class="nume" ondblclick="editName(this)">
+                                        <div class="nume1">Ion</div>
+                                        <div class="button">
+                                            <div class="imgV" onclick="saveName(this)">
+                                                <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-ok-icon.png"
+                                                    width="16" height="16" />
+                                            </div>
+                                            <div class="imgX" onclick="clearName(this)">
+                                                <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-cancel-icon.png"
+                                                    width="16" height="16" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="fmember" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                                        <div class="addBtn" onclick="openModal(1)"></div>
+                                    </div>
+                                    <div class="nume" ondblclick="editName(this)">
+                                        <div class="nume1">Angela</div>
+                                        <div class="button">
+                                            <div class="imgV" onclick="saveName(this)">
+                                                <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-ok-icon.png"
+                                                    width="16" height="16" />
+                                            </div>
+                                            <div class="imgX" onclick="clearName(this)">
+                                                <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-cancel-icon.png"
+                                                    width="16" height="16" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="couple1"></div>
+                                <div class="child1-couple"></div>
+                            </div>
+                            <div class="couple">
+                                <div>
+                                    <div class="fmember" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                                        <div class="addBtn" onclick="openModal(1)"></div>
+                                    </div>
+                                    <div class="nume" ondblclick="editName(this)">
+                                        <div class="nume1">Eugen</div>
+                                        <div class="button">
+                                            <div class="imgV" onclick="saveName(this)">
+                                                <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-ok-icon.png"
+                                                    width="16" height="16" />
+                                            </div>
+                                            <div class="imgX" onclick="clearName(this)">
+                                                <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-cancel-icon.png"
+                                                    width="16" height="16" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="fmember" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                                        <div class="addBtn" onclick="openModal(1)"></div>
+                                    </div>
+                                    <div class="nume" ondblclick="editName(this)">
+                                        <div class="nume1">Anna</div>
+                                        <div class="button">
+                                            <div class="imgV" onclick="saveName(this)">
+                                                <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-ok-icon.png"
+                                                    width="16" height="16" />
+                                            </div>
+                                            <div class="imgX" onclick="clearName(this)">
+                                                <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-cancel-icon.png"
+                                                    width="16" height="16" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="couple1"></div>
+                                <div class="child2-couple"></div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="grandChild">
+                                    <div class="couple">
+                                        <div>
+                                            <div class="fmember" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                                                <div class="addBtn" onclick="openModal(1)"></div>
+                                            </div>
+                                            <div class="nume" ondblclick="editName(this)">
+                                                <div class="nume1">Elena</div>
+                                                <div class="button">
+                                                    <div class="imgV" onclick="saveName(this)">
+                                                        <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-ok-icon.png"
+                                                            width="16" height="16" />
+                                                    </div>
+                                                    <div class="imgX" onclick="clearName(this)">
+                                                        <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-cancel-icon.png"
+                                                            width="16" height="16" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="fmember" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                                                <div class="addBtn" onclick="openModal(1)"></div>
+                                            </div>
+                                            <div class="nume" ondblclick="editName(this)">
+                                                <div class="nume1">Mike</div>
+                                                <div class="button">
+                                                    <div class="imgV" onclick="saveName(this)">
+                                                        <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-ok-icon.png"
+                                                            width="16" height="16" />
+                                                    </div>
+                                                    <div class="imgX" onclick="clearName(this)">
+                                                        <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-cancel-icon.png"
+                                                            width="16" height="16" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="couple1"></div>
+                                        <div class="grandChild-couple1"></div>
+                                        <div class="grandChild-couple1A"></div>
+                                    </div>
+                                    <div class="couple">
+                                        <div>
+                                            <div class="fmember" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                                                <div class="addBtn" onclick="openModal(1)"></div>
+                                            </div>
+                                            <div class="nume" ondblclick="editName(this)">
+                                                <div class="nume1">Valentina</div>
+                                                <div class="button">
+                                                    <div class="imgV" onclick="saveName(this)">
+                                                        <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-ok-icon.png"
+                                                            width="16" height="16" />
+                                                    </div>
+                                                    <div class="imgX" onclick="clearName(this)">
+                                                        <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-cancel-icon.png"
+                                                            width="16" height="16" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="fmember" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                                                <div class="addBtn" onclick="openModal(1)"></div>
+                                            </div>
+                                            <div class="nume" ondblclick="editName(this)">
+                                                <div class="nume1">Gleb</div>
+                                                <div class="button">
+                                                    <div class="imgV" onclick="saveName(this)">
+                                                        <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-ok-icon.png"
+                                                            width="16" height="16" />
+                                                    </div>
+                                                    <div class="imgX" onclick="clearName(this)">
+                                                        <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-cancel-icon.png"
+                                                            width="16" height="16" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="couple1"></div>
+                                        <div class="grandChild-couple2"></div>
+                                    </div>
+                                    <div class="couple">
+                                        <div>
+                                            <div class="fmember" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                                                <div class="addBtn" onclick="openModal(1)"></div>
+                                            </div>
+                                            <div class="nume" ondblclick="editName(this)">
+                                                <div class="nume1">Arina</div>
+                                                <div class="button">
+                                                    <div class="imgV" onclick="saveName(this)">
+                                                        <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-ok-icon.png"
+                                                            width="16" height="16" />
+                                                    </div>
+                                                    <div class="imgX" onclick="clearName(this)">
+                                                        <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-cancel-icon.png"
+                                                            width="16" height="16" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="fmember" onmouseover="showBtn(this)" onmouseout="hideBtn(this)">
+                                                <div class="addBtn" onclick="openModal(1)"></div>
+                                            </div>
+                                            <div class="nume" ondblclick="editName(this)">
+                                                <div class="nume1">Victor</div>
+                                                <div class="button">
+                                                    <div class="imgV" onclick="saveName(this)">
+                                                        <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-ok-icon.png"
+                                                            width="16" height="16" />
+                                                    </div>
+                                                    <div class="imgX" onclick="clearName(this)">
+                                                        <img src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/16/Action-cancel-icon.png"
+                                                            width="16" height="16" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="couple1"></div>
+                                        <div class="grandChild-couple3"></div>
+                                    </div>
+                                </div>
+                                <!--   <ul>
+                                    <li>
+                                        <div class="grandChild1">
+                                            <div class="grandChild1A">
+                                                <div>
+                                                    <div class="fmember"></div>
+                                                    <div class="nume">Iurii</div>
+                                                </div>
+                                                <div>
+                                                    <div class="fmember"></div>
+                                                    <div class="nume">Svetlana</div>
+                                                </div>
+                                                <div>
+                                                    <div class="fmember"></div>
+                                                    <div class="nume">Dimitrii</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="grandChild1B">
+                                                <div class="fmember"></div>
+                                                <div class="nume">Kamelia</div>
+                                            </div>
+
+                                            <div>
+                                                <div class="fmember"></div>
+                                                <div class="nume">Denis</div>
+                                            </div>
+                                            <div>
+                                                <div class="fmember"></div>
+                                                <div class="nume">Fiona</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul> -->
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <div id="timeDate"></div>
+        </ul>
+    </div>
+
+    <dialog id="modalPage">
+        <div id="modalOpen">
+            <label class="modalLabel">Choose another avatar</label>
+            <input type="file">
+        </div>
+        <div>
+            <button id="modalClose" type="reset" onclick="openModal(0)">Close modal</button>
+        </div>
+    </dialog>
+    <script src="tree.js"></script>
+
+</body>
+
+</html>
